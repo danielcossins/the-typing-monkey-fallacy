@@ -4,6 +4,7 @@
 var genesis = "In";//let's just try this first :)
 var typeCount = 0;
 var correctCharsTyped = 0;
+var longestStreak = 0;
 var startingTime = getTime();
 var endingTime;
 
@@ -41,11 +42,13 @@ function getRandomChar(){
 }
 
 function checkIfThisIsTheWordOfGod(){
-  console.log(genesis);
+  console.log("Monkey attempting to type: '"+genesis+"'");
   for(var i=0; i<genesis.length; i++){
     randChar=getRandomChar();
     console.log("Correct characters typed: "+correctCharsTyped);
+    console.log("Longest streak of correct characters typed: "+longestStreak);
     if(randChar===genesis.charAt(i)){
+      longestStreak = i+1;
       correctCharsTyped++;
       console.log("Yeah! We wanted '"+genesis.charAt(i)+"'\n and we got '"+randChar+"'");
     }
