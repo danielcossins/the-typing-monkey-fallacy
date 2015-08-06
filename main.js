@@ -1,7 +1,7 @@
 //open you're console BEFORE you run this
 
 //var genesis = "In the beginning God created the heavens and the earth.";
-var genesis = "I";//let's just try this first :)
+var genesis = "In";//let's just try this first :)
 var typeCount = 0;
 var correctCharsTyped = 0;
 var longestStreak = 0;
@@ -44,6 +44,7 @@ function getRandomChar(){
 
 function checkIfThisIsTheWordOfGod(){
   console.log("Monkey attempting to type: '"+genesis+"'");
+  console.log("Number of monkey attemps: "+typeCount);
   for(var i=0; i<genesis.length; i++){
     randChar=getRandomChar();
     console.log("Correct characters typed: "+correctCharsTyped);
