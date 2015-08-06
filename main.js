@@ -1,7 +1,7 @@
 //open you're console BEFORE you run this
 
 //var genesis = "In the beginning God created the heavens and the earth.";
-var genesis = "In";//let's just try this first :)
+var genesis = "I";//let's just try this first :)
 var typeCount = 0;
 var correctCharsTyped = 0;
 var longestStreak = 0;
@@ -21,15 +21,16 @@ while(true){
   var result=checkIfThisIsTheWordOfGod();
   typeCount++;
   if(result){
-    endingTime = getTime()-startingTime;
+    endingTime = getTime();
     break;
   }
 }
 ///////made it to the end//////////////////////
 var totalTime = endingTime-startingTime;
+totalTime = totalTime/1000;
 console.log("It's a miracle!");
 console.log("It only took "+typeCount+" tries!");
-console.log("It only took "+totalTime+" tries!");
+console.log("It only took "+totalTime+" seconds!");
 
 
 
