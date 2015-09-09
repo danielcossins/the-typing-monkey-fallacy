@@ -1,5 +1,4 @@
 # the-typing-monkey-fallacy
-# the-typing-monkey-fallacy
 An app designed to test how many seconds it will take for a monkey to type the whole Bible.
 
 #Usage
